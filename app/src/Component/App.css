@@ -1,0 +1,13 @@
+.post_list {
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.post_list_item {
+    max-width: 30%;
+    height: 300px;
+}
