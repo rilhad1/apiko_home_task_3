@@ -32,8 +32,8 @@ class App extends React.Component {
                 <h1>Home Task #3</h1>
                 <PostList count={this.state.num}/>
                  <div className="but">
-                    <button onClick={this.add}>Add List</button>
-                    <button onClick={this.rm}>Remove List</button>
+                    <button onClick={this.add}>More</button>
+                    <button onClick={this.rm}>Less</button>
                 </div>
             </React.Fragment> 
         );
