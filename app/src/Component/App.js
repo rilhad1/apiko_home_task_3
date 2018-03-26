@@ -29,9 +29,12 @@ class App extends React.Component {
     render = () => {
         return (
             <React.Fragment> 
-                <button onClick={this.add}>+</button>
-                <button onClick={this.rm}>-</button>
+                <h1>Home Task #3</h1>
                 <PostList count={this.state.num}/>
+                 <div className="but">
+                    <button onClick={this.add}>Add List</button>
+                    <button onClick={this.rm}>Remove List</button>
+                </div>
             </React.Fragment> 
         );
     }
@@ -41,3 +44,5 @@ export default App
 
 
 
+                // <button onClick={this.add}>+</button>
+                // <button onClick={this.rm}>-</button>
