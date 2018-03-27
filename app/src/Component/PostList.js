@@ -1,9 +1,8 @@
 import React from 'react';
-import data from '../data.js'
+import data from '../data.js';
 
 function PostList(props) {
-    const PostListItem = data.map((data, i) => {
-        if (i < props.count) {
+    const PostListItem = data.splice(0, props.count).map((data, i) => {
             return (
                 <li className="post-card" key={data.id}>
                 <a href="">
@@ -12,16 +11,13 @@ function PostList(props) {
                 </a>
                 </li>
                 );
-            } else {
-                return undefined;
-            }
     });
     return (
         <ul className="post-list">
             {PostListItem}
         </ul>
-    )
-}
+    );
+};
 
 
-export default PostList
+export default PostList;
