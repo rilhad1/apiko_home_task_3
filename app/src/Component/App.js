@@ -9,9 +9,8 @@ class App extends React.Component {
         this.state = {
             num: 10
         };
-        // this.add = this.add.bind(this);
-        // this.rm = this.rm.bind(this);
-
+        this.add = this.add.bind(this);
+        this.rm = this.rm.bind(this);
     }
     add = () => {
         const { num } = this.state;
@@ -40,9 +39,8 @@ class App extends React.Component {
     }
 }
 
-export default App
+export default App;
 
 
 
-                // <button onClick={this.add}>+</button>
-                // <button onClick={this.rm}>-</button>
+              
